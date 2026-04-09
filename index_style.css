@@ -33,11 +33,15 @@
 }
 
 
-.content p span{
+.name{
     font-size: 18px;
     color: #fff;
     font-style: italic;
     font-family: 'IRON MATHBOOK', sans-serif;
+}
+
+.symbol{
+    font-size: 10px;
 }
 
 
