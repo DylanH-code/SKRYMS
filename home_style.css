@@ -87,7 +87,7 @@ nav span{
     transition: .5s;
 }
 
-/* more menu container */
+/* about dropdown menu container */
 .more-menu {
   position: absolute;
   left: 0;
@@ -108,7 +108,7 @@ nav span{
   z-index: 999;
 }
 
-/* Show menu */
+/* Show about dropdown menu */
 .dropdown:hover .more-menu, .more-menu:hover {
   opacity: 1;
   visibility: visible;
@@ -116,7 +116,7 @@ nav span{
 }
 
 
-/* header for dropdown menu */
+/* header for about dropdown menu */
 h4 {
   color: white;
   margin-bottom: 15px;
@@ -178,6 +178,7 @@ nav a:nth-child(5):hover~span{
 /* link back to countdown */
 .back{
     color: #fff;
+    font-size: 15px;
 }
 
 
@@ -191,9 +192,41 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 9vw;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
 
-footer p{
-    font-size: 11px;
+/* style for the copy right at the very bottom */
+
+footer p:nth-child(3){
+    font-size: 12px;
 }
+
+
+/* social icon links for footer */
+
+
+.socials a {
+  display: inline-block;
+}
+
+
+.socials {
+  display: flex;
+  gap: 20px;              /* spacing between icons */
+  justify-content: left;
+  align-items: center;
+}
+
+.socials img {
+  width: 30px;            /* icon size */
+  height: auto;
+  cursor: pointer;
+}
+
+/* nice icon size increase hover animation */
+.socials a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
