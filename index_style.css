@@ -38,7 +38,7 @@
 
 @font-face {
     font-family: 'Iron Mathbook';
-    src: url('https://fonts.cdnfonts.com/css/iron-mathbook') format('truetype');
+    src: url('fonts/mathbook.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
