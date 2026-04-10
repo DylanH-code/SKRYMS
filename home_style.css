@@ -14,6 +14,46 @@ body{
     padding: 12px 25px;
 }
 
+
+/* Dropdown links */
+.dropdown {
+  position: relative;
+}
+
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  min-width: 160px;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+}
+
+
+.dropdown-menu a {
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: #333;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* all code for the nav */
 nav{
     position: relative;
     width: 550px;
@@ -47,19 +87,81 @@ nav span{
     transition: .5s;
 }
 
-.arrow{
-    width: 15px;
-    margin-left: 70px;
+/* more menu container */
+.more-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 50vw;               /* FULL SCREEN WIDTH */
+  background: #1a1a1a;
+  padding: 40px 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+
+  z-index: 999;
 }
 
-/* this make the hover over the navigation */
+/* Show menu */
+.dropdown:hover .more-menu, .more-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+/* header for dropdown menu */
+h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.column a {
+  display: block;
+  color: #808080;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* hover highlight */
+.column a:hover {
+  color: white;
+}
+
+/* arrow positioning */
+.arrow {
+  display: inline-block;
+  font-size: .9rem;
+  margin-left: 70px;
+  transition: transform 0.2s ease;
+  width: 15px;
+}
+
+/* Arrow animation */
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+
+
+/* red hover animation for the nav */
 nav a:nth-child(1):hover~span{
     left: 0;
 }
-nav a:nth-child(2):hover~span{
-    left: 105px;
-    width: 80px;
+
+nav div:nth-child(2):hover~span{
+    left: 100px;
+    width: 90px;
 }
+
 nav a:nth-child(3):hover~span{
     left: 190px;
     width: 70px;
@@ -73,19 +175,25 @@ nav a:nth-child(5):hover~span{
     width: 200px;
 }
 
-
+/* link back to countdown */
 .back{
     color: #fff;
 }
 
-    footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        position: fixed; /* Keep it at the bottom */
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-    }
+
+/* this is all footer css */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed; /* Keep it at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+footer p{
+    font-size: 11px;
+}
