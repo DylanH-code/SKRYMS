@@ -36,11 +36,18 @@
 }
 
 
+@font-face {
+    font-family: 'Iron Mathbook';
+    src: url('https://fonts.cdnfonts.com/css/iron-mathbook') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .name{
     font-size: 18px;
     color: #fff;
     font-style: italic;
-    font-family: 'IRON MATHBOOK', sans-serif;
+    font-family: 'Iron Mathbook', Arial, sans-serif;
 }
 
 .symbol{
