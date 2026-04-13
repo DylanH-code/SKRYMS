@@ -218,15 +218,27 @@ footer p:nth-child(3){
   align-items: center;
 }
 
-.socials img {
+.x{
+    width: 40px;   /* icon size */
+    height: auto;   /* makes it square automatically */
+    cursor: pointer;
+}
+
+.insta{
   width: 30px;            /* icon size */
-  height: auto;
+  height: auto;     /* makes it square automatically */
   cursor: pointer;
 }
 
-/* nice icon size increase hover animation */
-.socials a:hover img {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
+.yout{
+  width: 30px;            /* icon size */
+  height: auto;     /* makes it square automatically */
+  cursor: pointer;
 }
 
+
+/* nice icon size increase hover animation */
+.socials a:hover img {
+  transform: scale(1.1);  /* how big the icon gets */
+  transition: transform 0.2s ease;  /* the transformation */
+}
