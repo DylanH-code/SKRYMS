@@ -202,6 +202,48 @@ footer p:nth-child(3){
     font-size: 12px;
 }
 
+/* style for language btn */
+#langBtn {
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: fixed; /* Keep it at the bottom */
+    bottom: 10px;
+    right: 10px;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid grey;
+    transition: border-color 0.2s ease;
+    border-radius: 4px;
+}
+
+/* style for the 'back to top' btn */
+#backToTop {
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: fixed; /* Keep it at the bottom */
+    bottom: 10px;
+    right: 145px;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid grey;
+    transition: border-color 0.2s ease;
+    border-radius: 4px;
+}
+
+/* hover animation for btns */
+#backToTop:hover {
+  border-color: white;
+}
+#langBtn:hover {
+  border-color: white;
+}
+
+
+
 
 /* social icon links for footer */
 
