@@ -197,9 +197,8 @@ footer {
 }
 
 /* style for the copy right at the very bottom */
-
-footer p:nth-child(3){
-    font-size: 12px;
+#copyR{
+  font-size: 12px;
 }
 
 /* style for language btn */
