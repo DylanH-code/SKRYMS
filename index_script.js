@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
 // Set your target date and time (YYYY-MM-DDTHH:MM:SS format)
-const targetDate = new Date("2040-02-18T07:54:59").getTime();
+const targetDate = new Date("2010-02-18T07:54:59").getTime();
 
 // ===== COUNTDOWN FUNCTION =====
 function updateCountdown() {
