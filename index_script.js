@@ -7,10 +7,22 @@ function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    // If the countdown is over
+    // text that appears once countdown is over 
+    // under the 'const' is all the style for the youtube link
     if (distance <= 0) {
-        document.getElementById("launch").innerHTML = "Check YouTube...";
-        clearInterval(timerInterval);
+        document.getElementById("launch").innerHTML = "<a href='https://youtube.com/skryms_fps' target='_blank' rel='noopener noreferrer' id='YT'>Check Youtube...</a>";
+        
+    const link = document.getElementById("YT");
+    link.style.color = "#ff0000";
+    link.style.fontSize = "50px";
+    link.style.fontWeight = "bold";
+    link.style.textDecoration = "none";
+    link.style.fontFamily = "Arial, sans-serif";
+    link.style.border = "none";
+    link.style.outline = "none";
+    link.style.boxShadow = "none";
+    link.style.display = "inline-block";
+    link.style.width = "auto";
         return;
     }
 
