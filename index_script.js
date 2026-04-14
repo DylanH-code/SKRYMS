@@ -26,6 +26,9 @@ function updateCountdown() {
         return;
     }
 
+    
+
+
     // Time calculations
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
