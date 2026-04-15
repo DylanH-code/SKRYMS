@@ -87,7 +87,7 @@ nav span{
     transition: .5s;
 }
 
-/* about dropdown menu container */
+/* 'about' dropdown menu container */
 .more-menu {
   position: absolute;
   left: 0;
@@ -95,6 +95,7 @@ nav span{
   width: 50vw;               /* FULL SCREEN WIDTH */
   background: #1a1a1a;
   padding: 40px 80px;
+  border-radius: 10px;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
