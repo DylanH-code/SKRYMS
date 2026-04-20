@@ -1,5 +1,5 @@
 // ===== CONFIGURATION =====
-// Set your target date and time (YYYY-MM-DDTHH:MM:SS format)
+// Set the target date and time (YYYY-MM-DDTHH:MM:SS format)
 const targetDate = new Date("2010-02-18T07:54:59").getTime();
 
 // ===== COUNTDOWN FUNCTION =====
@@ -8,10 +8,10 @@ function updateCountdown() {
     const distance = targetDate - now;
 
     // text that appears once countdown is over 
-    // under the 'const' is all the style for the youtube link
     if (distance <= 0) {
         document.getElementById("launch").innerHTML = "<a href='https://youtube.com/skryms_fps' target='_blank' rel='noopener noreferrer' id='YT'>Check Youtube...</a>";
-        
+       
+    // stylesheet for the youtube link
     const link = document.getElementById("YT");
     link.style.color = "#ff0000";
     link.style.fontSize = "50px";
@@ -26,8 +26,6 @@ function updateCountdown() {
     link.style.textDecoration = "underline";
         return;
     }
-
-    
 
 
     // Time calculations
