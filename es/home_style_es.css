@@ -178,7 +178,6 @@ nav a:nth-child(5):hover~span{    /* latest patch notes btn */
     width: 180px;
 }
 
-
 /* link back to countdown */
 .back{
     color: #fff;
@@ -286,4 +285,87 @@ footer {
 .socials a:hover img {
   transform: scale(1.1);  /* how big the icon gets */
   transition: transform 0.2s ease;  /* the transformation */
+}
+
+
+/* ===== Language Dropdown ===== */
+.lang-dropdown {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.lang-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lang-btn:hover {
+  border-color: white;
+}
+
+/* Dropdown menu */
+.lang-menu {
+  display: none;
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  background: #222;
+  border: 1px solid grey;
+  border-radius: 4px;
+  min-width: 140px;
+  z-index: 999;
+}
+
+.lang-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.lang-menu a:hover {
+  background: #333;
+}
+
+/* Highlight current language */
+.active-lang {
+  color: #ff3753;
+}
+
+/* Show menu on hover */
+.lang-dropdown:hover .lang-menu {
+  display: block;
+}
+
+
+/* adds a hover buffer */
+.lang-dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
+
+
+/* language dropdown arrow */
+.langA{
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  width: 25px;
+  height: auto;
+}
+
+/* Arrow animation */
+.lang-dropdown:hover .langA {
+  transform: rotate(180deg);
 }
