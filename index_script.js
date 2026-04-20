@@ -23,6 +23,7 @@ function updateCountdown() {
     link.style.boxShadow = "none";
     link.style.display = "inline-block";
     link.style.width = "auto";
+    link.style.textDecoration = "underline";
         return;
     }
 
