@@ -8,13 +8,15 @@ function updateCountdown() {
     const distance = targetDate - now;
 
     // text that appears once countdown is over 
+    // link will be a link to the main trailer of my game
+    //vid will contain main gameplay and release date announcement
     if (distance <= 0) {
         document.getElementById("launch").innerHTML = "<a href='https://youtube.com/skryms_fps' target='_blank' rel='noopener noreferrer' id='YT'>Check Youtube...</a>";
        
     // stylesheet for the youtube link
     const link = document.getElementById("YT");
-    link.style.color = "#ff0000";
-    link.style.fontSize = "50px";
+    link.style.color = "#ff3753";
+    link.style.fontSize = "68px";
     link.style.fontWeight = "bold";
     link.style.textDecoration = "none";
     link.style.fontFamily = "Arial, sans-serif";
