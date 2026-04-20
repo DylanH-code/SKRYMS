@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', snas-serif;
+    box-sizing: border-box;
+}
+
+
+.conatiner{
+    width: 100vw;
+    height: 100vh;
+    background: #222;
+    padding: 0 8%;
+}
+
+.comp_logo{
+    width: 120px;
+    padding: 15px 0px;
+    position: absolute;
+    top: 0;  
+    left: 0;       
+    height: auto;       /* Maintain aspect ratio */
+}
+
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'IronMathbook';
+    src:
+        url('./fonts/iron-mathbook.woff2') format('woff2'),
+        url('./fonts/iron-mathbook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 'skryms' */
+.name{
+    font-size: 18px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'IronMathbook', Arial, sans-serif;
+}
+
+.symbol{
+    font-size: 10px;
+} 
+
+
+.content a{
+    width: 200px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.content a img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launch-time{
+    display: flex;
+    font-size: 80px;
+    color: #ff3753;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
