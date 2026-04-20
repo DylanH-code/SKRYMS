@@ -37,17 +37,21 @@
 
 
 @font-face {
-    font-family: 'Iron Mathbook';
-    src: url('fonts/mathbook.ttf') format('truetype');
+    font-family: 'IronMathbook';
+    src:
+        url('./fonts/iron-mathbook.woff2') format('woff2'),
+        url('./fonts/iron-mathbook.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+
+/* 'skryms' */
 .name{
     font-size: 18px;
     color: #fff;
     font-style: italic;
-    font-family: 'Iron Mathbook', Arial, sans-serif;
+    font-family: 'IronMathbook', Arial, sans-serif;
 }
 
 .symbol{
