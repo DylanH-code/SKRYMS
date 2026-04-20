@@ -1,4 +1,4 @@
-// 'back to top' btn and function
+// 'BACK TO TOP' btn and function
 
 const backToTop = document.getElementById("backToTop");
 
