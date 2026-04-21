@@ -1,4 +1,4 @@
-// 'BACK TO TOP' btn and function
+// ======================================================================================='BACK TO TOP' btn and function ==========================================================================================
 
 const backToTop = document.getElementById("backToTop");
 
@@ -20,7 +20,7 @@ backToTop.addEventListener("click", () => {
 });
 
 
-// ===== AUTOMATIC LANGUAGE DETECTION =====
+// ============================================================================================ AUTOMATIC LANGUAGE DETECTION ================================================================================
 (function autoLanguageRedirect() {
   // Prevent infinite redirect loop
   if (sessionStorage.getItem("langSet")) return;
@@ -49,4 +49,15 @@ langBtn.addEventListener("click", () => {
   location.href = isEnglish
     ? "home_es.html"
     : "home.html";
+});
+
+
+// ======================================================================================= Show active language ========================================================================================
+window.addEventListener("load", () => {
+  const activeLang = document.querySelector(".lang-menu .active-lang");
+  const currentLang = document.getElementById("current-lang");
+
+  if (activeLang && currentLang) {
+    currentLang.textContent = activeLang.textContent;
+  }
 });
