@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Skryms 主页</title>
+    <link href="home_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<style>
+
+    /* red hover animation for the nav */
+nav a:nth-child(1):hover~span{        /* 'home' btn */
+    left: 0px;
+    width: 100px;
+}
+
+nav div:nth-child(2):hover~span{      /* 'about' btn */
+    left: 115px;
+    width: 90px;
+}
+
+
+nav a:nth-child(3):hover~span{      /* 'store' btn */
+    left: 200px;
+    width: 70px;
+}
+nav a:nth-child(4):hover~span{      /* 'news' btn */
+    left: 265px;
+    width: 90px;
+}
+nav a:nth-child(5):hover~span{    /* latest patch notes btn */
+    left: 350px;
+    width: 200px;
+}
+
+#home_CH {
+    padding-left: 5px;
+}
+
+</style>
+
+<!-- enter skryms logo before the menu bar -->
+
+<!-- account button above that -->
+<!-- dowload button top right corner -->
+
+<!-- add a "newest srkym" section to the home screen-->
+<!-- "newest skrym" redirects to a -->
+
+<nav class="main-nav"> 
+    <a href="#" id="home_CH">主页</a>
+
+    <div class="dropdown">
+        <a href="#">关于 <span class="arrow">▼</span></a>
+
+        <div class="dropdown-menu more-menu">
+            <div class="column">
+                <h4>社交媒体</h4>
+                <!-- links to socials -->
+                <a href="https://youtube.com/skryms_fps" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://instagram.com/skryms_fps" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://twitter.com/skryms_fps" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+
+            <div class="column">
+                <h4>团队</h4>
+                <a href="#">开发者</a>
+                <a href="#">电子竞技</a>
+                <!-- create a team page with job opportunities -->
+                <a href="#">招募</a>
+            </div>
+
+            <div class="column">
+                <h4>支持</h4>
+                <a href="#">帮助中心</a>
+                <!-- link to help page (ai help as well as an option to connect with a person )-->
+                <a href="#">联系我们</a>
+                <a href="#">常见问题</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- webpage that contains handheld merch, as well as in game merch/credits to purchase -->
+    <a href="#">商店</a>
+
+    <!-- webpage that contain news for updates, tournament, or upcoming events, things like that -->
+    <a href="#">新闻</a>
+
+    <!-- leades to a document of writen out patch notes for the lastest update -->
+    <a href="#">最新更新说明</a>
+
+    <span></span>
+</nav>
+
+<footer id="footer">
+    <div class="socials">
+        <p>关注我们！</p> 
+        <a href="https://twitter.com/skryms_fps" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter.png" class="x">
+        </a>
+        <a href="https://instagram.com/skryms_fps" target="_blank" rel="noopener noreferrer">
+            <img src="images/insta.png" class="insta">
+        </a>
+        <a href="https://youtube.com/skryms_fps" target="_blank" rel="noopener noreferrer">
+            <img src="images/youtube.png" class="yout">
+        </a>
+    </div>
+
+    <a href="index.html" class="back">返回倒计时</a>
+
+    <p id="copyR">© 2026 OG Games</p>
+</footer>
+
+<div class="lang-dropdown">
+    
+<button class="lang-btn lang-stacked">
+  <span class="current-lang">中文</span>
+  <span>语言 <span class="langA">⮟</span></span>
+</button>
+
+
+    <!-- Language dropdown menu -->
+    <div class="lang-menu">
+        <a href="home.html">English</a>
+        <a href="home_es.html">Español</a>    <!-- spanish -->
+        <a href="home_fr.html">Français</a>   <!-- french -->
+        <a href="home_ch.html" class="active-lang">中文</a>   <!-- chinese -->
+        <a href="home_kr.html">한국어</a>   <!-- korean -->
+    </div>
+</div>
+
+<button id="backToTop">返回顶部 🡡</button>
+
+<!-- add more footer options and content and the very bottom of the page after scrolling all the way down -->
+
+<script src="home.js"></script>
+
+</body>
+</html>
