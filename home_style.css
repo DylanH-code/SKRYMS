@@ -361,7 +361,7 @@ footer {
   transform: rotate(180deg);
 }
 
-
+/* active language style */
 
 .lang-stacked {
   display: flex;
