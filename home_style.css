@@ -87,7 +87,7 @@ nav span{
     transition: .5s;
 }
 
-/* 'about' dropdown menu container */
+/* ================================================================================ 'ABOUT' dropdown menu container ============================================================================================= */
 .more-menu {
   position: absolute;
   left: 0;
@@ -149,7 +149,7 @@ h4 {
 
 
 
-/* red hover animation for the nav */
+/* ==================================================================================== Red Hover Animation for the Nav ==================================================================================== */
 nav a:nth-child(1):hover~span{        /* 'home' btn */
     left: 0;
 }
@@ -242,7 +242,7 @@ footer {
 
 
 
-/* social icon links for footer */
+/* ==================================================================================== Social Icon Links for Footer ==================================================================================== */
 
 
 .socials a {
@@ -283,7 +283,7 @@ footer {
 }
 
 
-/* ===== Language Dropdown ===== */
+/* ==================================================================================== Language Dropdown ==================================================================================== */
 .lang-dropdown {
   position: fixed;
   bottom: 10px;
@@ -329,10 +329,6 @@ footer {
   background: #333;
 }
 
-/* Highlight current language */
-.active-lang {
-  color: #f2ff37;
-}
 
 /* Show menu on hover */
 .lang-dropdown:hover .lang-menu {
@@ -364,3 +360,19 @@ footer {
 .lang-dropdown:hover .langA {
   transform: rotate(180deg);
 }
+
+
+
+.lang-stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.current-lang {
+  font-size: 12px;
+  opacity: 0.8;
+  padding-right: 45px;
+}
+
