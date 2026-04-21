@@ -2,7 +2,7 @@
 // Set the target date and time (YYYY-MM-DDTHH:MM:SS format)
 const targetDate = new Date("2040-02-18T07:54:59").getTime();
 
-// ===== COUNTDOWN FUNCTION =====
+// ======================================================================================= COUNTDOWN FUNCTION =============================================================================
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
@@ -30,7 +30,7 @@ function updateCountdown() {
     }
 
 
-    // Time calculations
+    // ====================================================================== Time calculations =============================================================================
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -41,6 +41,6 @@ function updateCountdown() {
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
 
-// ===== START TIMER =====
+// ======================================================================================= START TIMER ==============================================================================
 const timerInterval = setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call to avoid 1s delay
