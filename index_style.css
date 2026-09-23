@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .background {
     position: fixed;      /* stays behind everything */
     top: 0;
@@ -14,7 +15,6 @@
     object-fit: cover;    /* makes the image behave like a background */
     z-index: -1;          /* puts it behind your content */
 }
-
 
 
 
@@ -104,4 +104,3 @@
     font-size: 60px;
     margin-bottom: -14px;
 }
-
