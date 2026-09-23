@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("images/background.jpg");
+.background {
     background-size: cover;      /* makes it fill the screen */
     background-repeat: no-repeat;
     background-position: center;
