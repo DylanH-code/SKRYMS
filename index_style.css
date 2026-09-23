@@ -6,10 +6,15 @@
 }
 
 .background {
-    background-size: cover;      /* makes it fill the screen */
-    background-repeat: no-repeat;
-    background-position: center;
+    position: fixed;      /* stays behind everything */
+    top: 0;
+    left: 0;
+    width: 100vw;         /* full screen width */
+    height: 100vh;        /* full screen height */
+    object-fit: cover;    /* makes the image behave like a background */
+    z-index: -1;          /* puts it behind your content */
 }
+
 
 
 
